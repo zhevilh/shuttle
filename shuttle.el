@@ -1,5 +1,7 @@
 (defun shuttle ()
   (interactive)
+
+  (global-set-key (kbd "C-x g") 'magit-status)
   
   (require 'neotree)
   (defun neo-global--select-mru-window (arg)
