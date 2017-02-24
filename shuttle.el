@@ -31,10 +31,12 @@
   (winum-select-window-by-number 2))
 
 (use-package winum)
+(use-package which-key)
 
 (defun shuttle ()
   (interactive)
-  
+
+  (which-key-mode)
   (winum-mode)
   (slime)
   (neotree))
