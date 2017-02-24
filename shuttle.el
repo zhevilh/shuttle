@@ -20,9 +20,10 @@
   '(add-to-list 'ac-modes' 'slime-repl-mode))
 
 (add-hook 'lisp-mode-hook 'paredit-mode)
-(font-lock-add-keywords 'lisp-mode
-'(("(\\(\\(def\\|do-\\|with-\\|using-\\)\\(\\s_\\|\\w\\)*\\)"
-   1 font-lock-keyword-face)))
+(font-lock-add-keywords
+ 'lisp-mode
+ '(("(\\(\\(def\\|do-\\|with-\\|using-\\)\\(\\s_\\|\\w\\)*\\)"
+    1 font-lock-keyword-face)))
 
 (use-package neotree)
 
